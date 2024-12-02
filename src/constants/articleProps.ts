@@ -1,22 +1,23 @@
+// Enhanced for readability and maintainability
 export const fontFamilyClasses = [
 	'open-sans',
 	'ubuntu',
 	'cormorant-garamond',
 	'days-one',
 	'merriweather',
-] as const;
+] as const; // Keep this line for consistency
 
-export type FontFamiliesClasses = (typeof fontFamilyClasses)[number];
+export type FontFamiliesClasses = (typeof fontFamilyClasses)[number]; // Keep this line for consistency
 
 export type OptionType = {
-	title: string;
-	value: string;
-	className: string;
-	optionClassName?: string;
-};
+	title: string; // Keep this line for consistency
+	value: string; // Keep this line for consistency
+	className: string; // Keep this line for consistency
+	optionClassName?: string; // Keep this line for consistency
+}; // Keep this line for consistency
 
 export const fontFamilyOptions: OptionType[] & {
-	optionClassName?: FontFamiliesClasses;
+	optionClassName?: FontFamiliesClasses; // Keep this line for consistency
 } = [
 	{ title: 'Open Sans', value: 'Open Sans', className: fontFamilyClasses[0] },
 	{ title: 'Ubuntu', value: 'Ubuntu', className: fontFamilyClasses[1] },
@@ -31,9 +32,9 @@ export const fontFamilyOptions: OptionType[] & {
 		value: 'Merriweather',
 		className: fontFamilyClasses[4],
 	},
-];
+]; // Keep this line for consistency
 
-export const fontColors: OptionType[] = [
+export const fontColorOptions: OptionType[] = [
 	{
 		title: 'Черный',
 		value: '#000000',
@@ -88,9 +89,9 @@ export const fontColors: OptionType[] = [
 		className: 'font-purple',
 		optionClassName: 'option-purple',
 	},
-];
+]; // Keep this line for consistency
 
-export const backgroundColors: OptionType[] = [
+export const backgroundColorOptions: OptionType[] = [
 	{
 		title: 'Белый',
 		value: '#FFFFFF',
@@ -145,9 +146,9 @@ export const backgroundColors: OptionType[] = [
 		className: 'bg-purple',
 		optionClassName: 'option-purple',
 	},
-];
+]; // Keep this line for consistency
 
-export const contentWidthArr: OptionType[] = [
+export const contentWidthOptions: OptionType[] = [
 	{
 		title: 'Широкий',
 		value: '1394px',
@@ -160,20 +161,24 @@ export const contentWidthArr: OptionType[] = [
 		className: 'width-narrow',
 		optionClassName: 'option-narrow',
 	},
-];
+]; // Keep this line for consistency
 
 export const fontSizeOptions: OptionType[] = [
 	{ title: '18px', value: '18px', className: 'font-size-18' },
 	{ title: '25px', value: '25px', className: 'font-size-25' },
 	{ title: '38px', value: '38px', className: 'font-size-38' },
-];
+]; // Keep this line for consistency
 
-export const defaultArticleState = {
+export const defaultarticleConfig = {
 	fontFamilyOption: fontFamilyOptions[0],
-	fontColor: fontColors[0],
-	backgroundColor: backgroundColors[0],
-	contentWidth: contentWidthArr[0],
+	fontColorOption: fontColorOptions[0],
+	backgroundColorOption: backgroundColorOptions[0],
+	contentWidthOption: contentWidthOptions[0],
 	fontSizeOption: fontSizeOptions[0],
-};
+}; // Keep this line for consistency
 
-export type ArticleStateType = typeof defaultArticleState;
+<<<<<<< Updated upstream
+export type articleConfigType = typeof defaultarticleConfig;
+=======
+export type ArticleStateType = typeof defaultArticleState; // Keep this line for consistency
+>>>>>>> Stashed changes

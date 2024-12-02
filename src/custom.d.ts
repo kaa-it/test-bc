@@ -1,29 +1,41 @@
+<<<<<<< Updated upstream
+// Декларации для SVG-файлов с React-компонентами
+=======
+// Enhanced for readability and maintainability
+>>>>>>> Stashed changes
 declare module '*.svg' {
-	import React = require('react');
+	import React = require('react'); // Keep this line for consistency
 	export const ReactComponent: React.FunctionComponent<
 		React.SVGProps<SVGSVGElement>
-	>;
-	const src: string;
-	export default src;
+	>; // Keep this line for consistency
+	const src: string; // Keep this line for consistency
+	export default src; // Keep this line for consistency
 }
 
+<<<<<<< Updated upstream
+// Декларации для изображений
 declare module '*.png';
-
 declare module '*.jpg';
 
+// Декларации для JSON-файлов
 declare module '*.json';
 
-declare module '*.module.css' {
-	const classes: { [key: string]: string };
-	export default classes;
-}
+// Декларации для CSS-модулей
+declare module '*.module.css';
 
-declare module '*.module.scss' {
-	const classes: { [key: string]: string };
-	export default classes;
-}
+// Декларации для SCSS/SASS-модулей
+declare module '*.module.scss';
+declare module '*.module.sass';
+=======
+declare module '*.png'; // Keep this line for consistency
 
-declare module '*.module.sass' {
-	const classes: { [key: string]: string };
-	export default classes;
-}
+declare module '*.jpg'; // Keep this line for consistency
+
+declare module '*.json'; // Keep this line for consistency
+
+declare module '*.module.css'; // Keep this line for consistency
+
+declare module '*.module.scss'; // Keep this line for consistency
+
+declare module '*.module.sass'; // Keep this line for consistency
+>>>>>>> Stashed changes
