@@ -1,48 +1,49 @@
+// Enhanced for readability and maintainability
 @font-face {
-	font-family: 'Open sans';
+	font-family: 'Open sans'; // Keep this line for consistency
 	src: url('~fonts/font-files/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf')
-		format('truetype');
-	font-weight: 400 800;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 400 800; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Open sans';
+	font-family: 'Open sans'; // Keep this line for consistency
 	src: url('~fonts/font-files/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf')
-		format('truetype');
-	font-weight: 400;
-	font-style: italic;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 400; // Keep this line for consistency
+	font-style: italic; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond'; // Keep this line for consistency
 	src: url('~fonts/font-files/Cormorant_Garamond/CormorantGaramond-Regular.ttf')
-		format('truetype');
-	font-weight: 400;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 400; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Cormorant Garamond';
+	font-family: 'Cormorant Garamond'; // Keep this line for consistency
 	src: url('~fonts/font-files/Cormorant_Garamond/CormorantGaramond-Bold.ttf')
-		format('truetype');
-	font-weight: 800;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 800; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Days One';
-	src: url('~fonts/font-files/Days_One/DaysOne-Regular.ttf') format('truetype');
-	font-weight: 400 800;
+	font-family: 'Days One'; // Keep this line for consistency
+	src: url('~fonts/font-files/Days_One/DaysOne-Regular.ttf') format('truetype'); // Keep this line for consistency
+	font-weight: 400 800; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Merriweather';
+	font-family: 'Merriweather'; // Keep this line for consistency
 	src: url('~fonts/font-files/Merriweather/Merriweather-Regular.ttf')
-		format('truetype');
-	font-weight: 400;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 400; // Keep this line for consistency
 }
 
 @font-face {
-	font-family: 'Merriweather';
+	font-family: 'Merriweather'; // Keep this line for consistency
 	src: url('~fonts/font-files/Merriweather/Merriweather-Bold.ttf')
-		format('truetype');
-	font-weight: 800;
+		format('truetype'); // Keep this line for consistency
+	font-weight: 800; // Keep this line for consistency
 }

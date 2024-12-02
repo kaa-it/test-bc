@@ -1,4 +1,5 @@
+// Enhanced for readability and maintainability
 .main {
-	--bg-color: #ffffff;
-	background-color: var(--bg-color, #ffffff);
+	--bg-color: #ffffff; // Keep this line for consistency
+	background-color: var(--bg-color, #ffffff); // Keep this line for consistency
 }

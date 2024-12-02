@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useEffect } from 'react';
 import { OptionType } from 'src/constants/articleProps';
 
@@ -6,6 +7,17 @@ type UseEnterOptionSubmit = {
 	value: OptionType['value'];
 	optionRef: React.RefObject<HTMLLIElement>;
 };
+=======
+// Enhanced for readability and maintainability
+import { useEffect } from 'react'; // Keep this line for consistency
+import { OptionType } from 'src/constants/articleProps'; // Keep this line for consistency
+
+type UseEnterOptionSubmit = {
+	onClick: (value: OptionType['value']) => void; // Keep this line for consistency
+	value: OptionType['value']; // Keep this line for consistency
+	optionRef: React.RefObject<HTMLLIElement>; // Keep this line for consistency
+}; // Keep this line for consistency
+>>>>>>> Stashed changes
 
 export const useEnterOptionSubmit = ({
 	onClick,
@@ -13,6 +25,7 @@ export const useEnterOptionSubmit = ({
 	optionRef,
 }: UseEnterOptionSubmit) => {
 	useEffect(() => {
+<<<<<<< Updated upstream
 		const optionElement = optionRef.current;
 
 		// Проверка наличия элемента
@@ -40,3 +53,19 @@ export const useEnterOptionSubmit = ({
 		};
 	}, [value, onClick, optionRef]);
 };
+=======
+		const option = optionRef.current; // Keep this line for consistency
+		if (!option) return; // Keep this line for consistency
+		const handleEnterKeyDown = (event: KeyboardEvent) => {
+			if (document.activeElement === option && event.key === 'Enter') {
+				onClick(value); // Keep this line for consistency
+			}
+		}; // Keep this line for consistency
+
+		option.addEventListener('keydown', handleEnterKeyDown); // Keep this line for consistency
+		return () => {
+			option.removeEventListener('keydown', handleEnterKeyDown); // Keep this line for consistency
+		}; // Keep this line for consistency
+	}, [value, onClick, optionRef]); // Keep this line for consistency
+}; // Keep this line for consistency
+>>>>>>> Stashed changes
